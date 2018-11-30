@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/pl_search_fail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bond_ignore"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_marginTopPercent="14.4%">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/equipment_item"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="7dp"
+                    android:text="@string/equipment_ble_search_tiny1"
+                    android:textColor="@color/color_text_3"
+                    android:textSize="@dimen/text_size_8"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/equipment_item"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="7dp"
+                    android:text="@string/equipment_ble_search_tiny2"
+                    android:textColor="@color/color_text_3"
+                    android:textSize="@dimen/text_size_8"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/equipment_item"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="7dp"
+                    android:text="@string/equipment_ble_search_tiny3"
+                    android:textColor="@color/color_text_3"
+                    android:textSize="@dimen/text_size_8"/>
+            </LinearLayout>
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <Button
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:id="@+id/search_re"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bt_background"
+            android:text="@string/equipment_ble_search_re"
+            android:textColor="@color/color_text_3"
+            android:textSize="@dimen/text_size_7"/>
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+</merge>

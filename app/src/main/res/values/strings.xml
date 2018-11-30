@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">心智护</string>
+
+    <string name="open">打开</string>
+    <string name="close">关闭</string>
+    <string name="analyze_no_net">网络连接不可用，请检查网络</string>
+    <string name="tv_next">下一步</string>
+
+    <string name="equipment_ble_search_fail">搜索失败</string>
+    <string name="equipment_ble_search_fail_info">未找到BodyPlus智能服装</string>
+    <string name="equipment_ble_search_tiny1">请确认装备在手机附近</string>
+    <string name="equipment_ble_search_tiny2">请确认装备已正确安装在服装上</string>
+    <string name="equipment_ble_search_tiny3">请确认蓝牙已打开</string>
+    <string name="equipment_ble_search_re">重新搜索</string>
+    <string name="equipment_ble_bond_max">仅可绑定两件装备</string>
+    <string name="equipment_ble_bond">绑定</string>
+    <string name="equipment_start_bond">开始绑定</string>
+    <string name="equipment_ignore_bond">暂不连接</string>
+    <string name="equipment_sn">SN:&#x0020;%1$s</string>
+    <string name="equipment_ble_bonding">绑定中…</string>
+    <string name="cancel">取 消</string>
+    <string name="ucrop_error_input_data_is_absent">Both input and output Uri must be specified</string>
+    <string name="image_cut_title">剪切图片</string>
+    <string name="confirm">确 认</string>
+
+
+
+    <string name="label_select_picture">请选择图片</string>
+    <string name="me_update_now">立即升级</string>
+    <string name="me_dont_update">稍后再说</string>
+    <string name="me_version_update">版本升级 V</string>
+    <string name="update_wait">请稍后&#8230;</string>
+    <string name="me_ownloaded_successfully">下载成功</string>
+    <string name="me_Failed_download">下载失败</string>
+    <string name="update_app">正在下载安装包&#8230;</string>
+
+    <string name="equipment_update_succeed">升级成功</string>
+    <string name="equipment_update_fail">升级失败</string>
+    <string name="equipment_ble_zip_error">升级包解析出错</string>
+    <string name="equipment_ble_wait">请稍后&#8230;</string>
+    <string name="equipment_ble_check">校验中&#8230;</string>
+    <string name="equipment_core_update">正在执行升级&#8230;</string>
+    <string name="equipment_ble_update_fw">Core固件更新</string>
+
+
+    <string name="main_open">打开</string>
+    <string name="main_closed">关闭</string>
+
+
+</resources>

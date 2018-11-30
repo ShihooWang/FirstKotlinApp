@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="40dp"
+        android:id="@+id/tv_status"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:gravity="center"
+        android:text="选择设备"
+        android:textStyle="bold"
+        android:textColor="@color/color_text_1"
+        android:textSize="@dimen/text_size_6"
+        />
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:gravity="center"
+        android:text="请选择BodyPlus设备"
+        android:textColor="@color/color_text_2"
+        android:textSize="@dimen/text_size_4"
+        />
+
+    <RelativeLayout
+        android:layout_marginTop="25dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <include
+            layout="@layout/equipment_search_result"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="29dp"
+        android:id="@+id/bond_ignore"
+        android:layout_width="140dp"
+        android:layout_height="38dp"
+        android:text="@string/equipment_ignore_bond"
+        android:gravity="center"
+        android:textColor="@color/color_text_2"
+        android:textSize="@dimen/text_size_4"
+         />
+
+</LinearLayout>

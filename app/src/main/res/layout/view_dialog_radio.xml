@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:orientation="vertical"
+                android:padding="8dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="0.5dp"
+            android:background="@drawable/view_dialog_top_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="12dp"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/text_size_4" />
+
+        <TextView
+            android:id="@+id/divider1"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_divider1"
+            />
+
+        <LinearLayout
+            android:id="@+id/dialogLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+        <TextView
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_divider1"
+            />
+        <TextView
+            android:id="@+id/ok"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/view_dialog_bottom_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/color_text_3"
+            android:textSize="@dimen/text_size_3" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="372dp"
+        android:layout_marginTop="153dp"
+        android:indeterminate="false"
+        android:visibility="gone"/>
+
+</RelativeLayout>

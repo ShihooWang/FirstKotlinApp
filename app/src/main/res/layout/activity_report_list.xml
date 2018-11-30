@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:stl="http://schemas.android.com/apk/res-auto"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:orientation="vertical">
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<include layout="@layout/view_title_base" />-->
+    <!--</LinearLayout>-->
+
+
+
+    <!--<android.support.v4.widget.SwipeRefreshLayout-->
+    <!--android:id="@+id/srl"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:id="@+id/view_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/color_text_1"
+            android:visibility="gone"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+                >
+                <ImageView
+                    android:id="@+id/image_empty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/ic_empty_data"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:gravity="center"
+                    android:text="暂无报告"
+                    android:textColor="@color/color_text_4"
+                    android:textSize="@dimen/text_size_3"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/view_report_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <cc.bodyplus.health.widget.tablayout.SlidingTabLayout
+                android:id="@+id/stl_tablayout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                app:tl_indicator_color="@color/color_text_1"
+                app:tl_textSelectColor="@color/color_text_1"
+                app:tl_textUnselectColor="@color/color_text_2"
+                stl:tl_indicator_corner_radius="1.5dp"
+                stl:tl_indicator_height="3dp"
+                stl:tl_indicator_width="30dp"
+                android:layout_marginBottom="12dp"
+                ></cc.bodyplus.health.widget.tablayout.SlidingTabLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"></android.support.v4.view.ViewPager>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_text_1"
+                android:overScrollMode="never"
+                >
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+    </FrameLayout>
+    <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+</LinearLayout>

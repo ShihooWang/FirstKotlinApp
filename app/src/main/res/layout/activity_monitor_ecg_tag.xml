@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_text_1"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_closed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:src="@drawable/monitor_ic_report_closed" />
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="28dp"
+        android:layout_marginStart="28dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/monitor_tv_result"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:text="疑似：过渡"
+            android:textColor="@color/color_text_3"
+            android:textSize="@dimen/text_size_5"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:text="(此分析仅供参考，请以医生复核为准)"
+            android:textColor="@color/color_text_4"
+            android:textSize="@dimen/text_size_3" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/color_divider" />
+        <TextView
+            app:layout_marginTopPercent="4.1%"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:gravity="center_vertical"
+            android:text="刚刚身体有以下不适吗？"
+            android:textColor="@color/color_text_3"
+            android:textSize="@dimen/text_size_4" />
+
+        <cc.bodyplus.health.widget.flowtag.FlowTagLayout
+            android:visibility="visible"
+            android:layout_marginTop="14dp"
+            android:id="@+id/tag_flow_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            app:layout_marginTopPercent="4.1%"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <EditText
+                android:id="@+id/monitor_edit"
+                android:textColor="@color/color_text_4"
+                android:textSize="@dimen/text_size_3"
+                android:hint="此处补充描述"
+                android:gravity="start|top"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="@drawable/edit_background"/>
+
+            <LinearLayout
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:gravity="center"
+                    android:text="查看心电图"
+                    android:textSize="@dimen/text_size_4"
+                    android:textColor="@color/color_text_5"
+                    android:textStyle="bold"
+                    android:id="@+id/bt_show_ecg"
+                    android:layout_marginEnd="13dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bt_background_green"/>
+                <TextView
+                    android:gravity="center"
+                    android:text="完成并提交"
+                    android:textSize="@dimen/text_size_4"
+                    android:textColor="@color/color_text_5"
+                    android:textStyle="bold"
+                    android:id="@+id/bt_commit"
+                    android:layout_weight="1"
+                    android:layout_marginStart="13dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bt_background_green"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+</com.zhy.android.percent.support.PercentLinearLayout>
+

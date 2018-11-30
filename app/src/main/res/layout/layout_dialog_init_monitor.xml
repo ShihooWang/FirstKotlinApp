@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="280dp"
+    android:layout_height="250dp"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_background"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/input_title"
+        android:layout_width="fill_parent"
+        android:layout_height="58dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="标题"
+        android:textColor="@color/color_text_3"
+        android:textSize="@dimen/text_size_5" />
+
+
+    <TextView
+        android:id="@+id/input_content"
+        android:layout_width="fill_parent"
+        android:layout_height="152dp"
+        android:gravity="center"
+        android:text="5"
+        android:textColor="@color/color_text_5"
+        android:textSize="@dimen/text_size_9" />
+
+
+</LinearLayout>

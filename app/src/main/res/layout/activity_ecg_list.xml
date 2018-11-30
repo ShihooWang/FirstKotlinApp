@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_text_1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/ig_closed_list"
+            android:layout_centerVertical="true"
+            android:padding="16dp"
+            android:src="@drawable/monitor_more_closed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="心电记录"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/text_size_5"
+            android:textColor="@color/color_text_3"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/color_text_6"
+        android:textColor="@color/color_text_4"
+        android:textSize="@dimen/text_size_2"
+        android:gravity="center"
+        android:text="(此分析仅供参考，请以医生复核为准)"
+        />
+
+    <ListView
+        android:id="@+id/list_View"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/color_divider"
+        android:horizontalSpacing="1dp"
+        android:listSelector="@drawable/selector_list_bar"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="1dp"
+        android:scrollbars="none"
+        android:dividerHeight="1px"/>
+
+
+</LinearLayout>
+

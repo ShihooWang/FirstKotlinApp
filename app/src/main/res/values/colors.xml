@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#044060</color>
+    <color name="colorPrimaryDark">#044060</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="color_text_1">#FFFFFF</color>
+    <color name="color_text_2">#80FFFFFF</color>
+    <color name="color_text_3">#1E1E4B</color>
+    <color name="color_text_4">#A5A5B6</color>
+    <color name="color_text_5">#31D4D1</color>
+    <color name="color_text_6">#f3f3f6</color>
+
+    <color name="black">#000000</color>
+    <color name="backgroud_blue">#2E4058</color>
+    <color name="white">#ffffff</color>
+    <color name="gray">#dddddd</color>
+    <color name="transparent">#00000000</color>
+    <color name="orange">#FF6933</color>
+    <color name="color_512da8">#512da8</color>
+    <color name="color_transparent_2">#33000000</color>
+
+    <!--255 255 255 0.3-->
+    <color name="color_text_7">#02CD7B</color>
+    <!-- 2,205,123,1-->
+    <color name="color_text_8">#7F019FFB</color>
+    <!-- 1,159,251,0.5-->
+    <color name="color_text_9">#5A80E0</color>
+    <!-- 90,128,224,1-->
+
+    <color name="color_divider">#e4e5e6</color>
+    <color name="color_border_divider">#d5d9dd</color>
+    <color name="btn_next_bg_normal">#31D4D1</color>
+    <color name="btn_next_bg_pressed">#B331D4D1</color>
+    <color name="btn_white_bg_normal">#ffffff</color>
+    <color name="btn_white_bg_pressed">#B3ffffff</color>
+    <color name="dialog_backgroud">#f6f7f8</color>
+    <color name="color_organge">#FFFF6933</color>
+
+
+
+    <!--Crop View-->
+    <color name="ucrop_color_default_crop_grid">#ffffff</color>
+    <color name="ucrop_color_default_crop_frame">#ffffff</color>
+    <color name="ucrop_color_default_dimmed">#8c000000</color>
+    <color name="ucrop_color_widget_active">#FF6E40</color>
+    <color name="ucrop_color_progress_wheel_line">#808080</color>
+    <color name="blank">#000000</color>
+    <color name="color_all_report_rectangle">#17ffffff</color>
+
+    <color name="black_gray">#17ffffff</color>
+
+
+    <color name="app_green">#02CD7B</color>
+    <color name="color_divider1">#1AFFFFFF</color>
+    <color name="color_ecg_sleep_divider2">#1AFFFFFF</color>
+    <color name="color_transparent_backgroud">#14FFFFFF</color>
+    <color name="color_circle_progress">#019ffb</color>
+    <color name="color_guide_mask">#B2000000</color>
+
+    <color name="color_sober">#b79c3e</color>
+    <color name="color_shallow">#7f019ffb</color>
+    <color name="color_deep">#631bd9</color>
+
+    <integer-array name="gradient_arc_color_sober">
+        <item>@color/color_sober</item>
+        <item>@color/color_sober</item>
+        <item>@color/color_sober</item>
+    </integer-array>
+
+    <integer-array name="gradient_arc_color_shallow">
+        <item>@color/color_shallow</item>
+        <item>@color/color_shallow</item>
+        <item>@color/color_shallow</item>
+    </integer-array>
+
+    <integer-array name="gradient_arc_color_deep">
+        <item>@color/color_deep</item>
+        <item>@color/color_deep</item>
+        <item>@color/color_deep</item>
+    </integer-array>
+
+    <color name="color_sleep_mask">#99000000</color>
+    <color name="seekbar_second">#3302CD7B</color>
+    <color name="normal_app_green">#31D4D1</color>
+    <color name="press_app_green">#6631D4D1</color>
+    <!-- title 半透明背景颜色 -->
+    <color name="color_title_bg">#CCFFFFFF</color>
+
+    <!-- 通用item颜色 -->
+    <color name="item_white_background_press">#d3d3d3</color>
+</resources>

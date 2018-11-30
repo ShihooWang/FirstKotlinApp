@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_text_1"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/png_ic_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back_black"
+            android:padding="16dp"
+            />
+
+        <TextView
+            android:text="详情"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_5"
+            android:textColor="@color/color_text_3"/>
+
+        <TextView
+            android:id="@+id/text_share"
+            android:padding="5dp"
+            android:layout_marginEnd="11dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:text="分享"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_4"
+            android:textColor="@color/color_text_3"/>
+    </RelativeLayout>
+
+
+    <cc.bodyplus.health.widget.photoview.PhotoView
+        android:id="@+id/photo_view"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <cc.bodyplus.health.widget.EcgShareImageView
+        android:id="@+id/ecg_share_ig"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="240dp"
+    android:layout_height="160dp"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_background"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/input_title"
+        android:layout_width="fill_parent"
+        android:layout_height="58dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="标题"
+        android:textColor="@color/color_text_3"
+        android:textSize="@dimen/text_size_5" />
+
+    <View
+        android:background="@color/color_divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/dialog_tv_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="58dp"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/color_text_5"
+            android:textSize="@dimen/text_size_4" />
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/dialog_tv_confirm"
+            android:layout_width="fill_parent"
+            android:layout_height="58dp"
+            android:gravity="center"
+            android:text="确认"
+            android:textColor="@color/color_text_3"
+            android:textSize="@dimen/text_size_4" />
+    </LinearLayout>
+
+</LinearLayout>

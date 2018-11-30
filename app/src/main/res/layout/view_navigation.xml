@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:id="@+id/view_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/white"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/view_profile"
+            android:layout_width="match_parent"
+            android:layout_height="159dp"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_avatar"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:paddingRight="16dp"
+                android:scaleType="centerCrop"
+                app:civ_border_color="@color/color_border_divider"
+                app:civ_border_width="0.5dp"
+                android:layout_marginTop="60dp"
+                android:src="@drawable/ic_avatar_female"
+                />
+
+            <LinearLayout
+                android:layout_marginTop="64dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_nick"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/color_text_3"
+                    android:textSize="@dimen/text_size_4"
+                    android:text="未登录"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="26dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/color_text_4"
+                    android:textSize="@dimen/text_size_3"
+                    android:text="点击登录"
+                    />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_img_array" />
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/view_my_doctor"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="我的医生"
+                android:textColor="@color/color_text_3"
+                android:textSize="@dimen/text_size_4" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_img_array" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/view_device"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="设备信息"
+                android:textColor="@color/color_text_3"
+                android:textSize="@dimen/text_size_4" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_img_array" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/view_about_me"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="关于我们"
+                android:textColor="@color/color_text_3"
+                android:textSize="@dimen/text_size_4" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_img_array" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/view_purchase"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="我要购买"
+                android:textColor="@color/color_text_3"
+                android:textSize="@dimen/text_size_4" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_img_array" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+
+        <RelativeLayout
+            android:id="@+id/view_logout"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="退出登录"
+                android:textColor="@color/color_text_3"
+                android:textSize="@dimen/text_size_4" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_img_exit" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</merge>

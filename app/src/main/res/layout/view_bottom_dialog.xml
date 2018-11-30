@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="285dp"
+              android:background="@color/dialog_backgroud"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center_vertical"
+        android:background="#4D666666">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="取消"
+            android:textColor="@color/color_text_3"
+            android:textSize="@dimen/text_size_5" />
+
+        <TextView
+            android:id="@+id/tv_dialog_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/color_text_3"
+            android:textSize="@dimen/text_size_5" />
+
+        <TextView
+            android:id="@+id/tv_save"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:text="保存"
+            android:textColor="@color/color_text_3"
+            android:textSize="@dimen/text_size_5" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" android:background="@color/color_divider" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <cc.bodyplus.health.widget.wheelview.WheelView
+            android:id="@+id/view_wheel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dialog_backgroud">
+
+        </cc.bodyplus.health.widget.wheelview.WheelView>
+    </LinearLayout>
+
+
+</LinearLayout>

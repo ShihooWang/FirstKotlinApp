@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:background="@color/color_text_1"
+              android:fitsSystemWindows="true">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/transparent"
+        app:popupTheme="@style/toolbarMenuStyle"
+        app:contentInsetStart="0dp"
+        >
+        <ImageView
+            android:id="@+id/title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_img_back"
+            android:layout_centerVertical="true"
+            android:padding="16dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="编辑资料"
+            android:textStyle="bold"
+            android:textColor="@color/color_text_3"
+            android:textSize="@dimen/text_size_5"/>
+    </android.support.v7.widget.Toolbar>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_divider" android:layout_marginTop="28dp"  android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"  />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/view_profile"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:text="头像"
+                    android:textColor="@color/color_text_3"
+                    android:textSize="@dimen/text_size_4" />
+
+                <TextView
+                    android:id="@+id/tv_version_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:textColor="@color/color_text_4"
+                    android:textSize="@dimen/text_size_3"
+                    android:text="点击编辑"
+                    />
+            </LinearLayout>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_avatar"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:paddingRight="28dp"
+                android:scaleType="centerCrop"
+                app:civ_border_color="@color/color_border_divider"
+                app:civ_border_width="0.5dp"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_divider"  android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginTop="23dp"
+            android:id="@+id/linear_nick"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:text="昵称"
+                android:textColor="@color/color_text_3"
+                android:textSize="@dimen/text_size_4" />
+            <EditText
+                android:id="@+id/tv_nick"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:background="@color/white"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:textColor="@color/color_text_4"
+                android:textSize="@dimen/text_size_3" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_divider"   android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginTop="23dp"
+            android:id="@+id/linear_gender"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:text="性别"
+                android:textColor="@color/color_text_3"
+                android:textSize="@dimen/text_size_4" />
+
+            <TextView
+                android:id="@+id/tv_gender"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:textColor="@color/color_text_4"
+                android:textSize="@dimen/text_size_3"
+                android:text=""
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_divider"  android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginTop="23dp"
+            android:id="@+id/linear_age"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:text="年龄"
+                android:textColor="@color/color_text_3"
+                android:textSize="@dimen/text_size_4" />
+
+            <TextView
+                android:id="@+id/tv_age"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:textColor="@color/color_text_4"
+                android:textSize="@dimen/text_size_3"
+                android:text=""
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_divider"  android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp" />
+    </LinearLayout>
+</LinearLayout>

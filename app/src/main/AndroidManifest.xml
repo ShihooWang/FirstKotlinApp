@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="cc.bodyplus.health">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 允许程序访问CellID或WiFi热点来获取粗略的位置 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="true" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <application
+        android:name="cc.bodyplus.health.App"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        tools:replace="android:name"
+        android:theme="@style/AppTheme">
+        <activity android:name="cc.bodyplus.health.mvp.view.login.SplashActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="cc.bodyplus.health.mvp.view.report.activity.ReportActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"/>
+        <!--<activity android:name="cc.bodyplus.health.mvp.view.report.activity.ReportListActivity" />-->
+        <activity android:name="cc.bodyplus.health.mvp.view.main.MainActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"/>
+        <activity android:name="cc.bodyplus.health.mvp.view.login.AboutActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"/>
+        <activity android:name="cc.bodyplus.health.mvp.view.login.ProfileActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"/>
+        <activity android:name="cc.bodyplus.health.mvp.view.login.DeviceInfoActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"/>
+        <activity android:name="cc.bodyplus.health.mvp.view.login.MyDoctorActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"/>
+        <activity android:name="cc.bodyplus.health.mvp.view.login.EnterNameActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"/>
+        <activity android:name="cc.bodyplus.health.mvp.view.login.EnterPhoneNumberActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"/>
+        <activity android:name="cc.bodyplus.health.mvp.view.login.EnterSmsCodeActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"/>
+        <activity android:name="cc.bodyplus.health.mvp.view.login.RegisterAgeActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"/>
+        <activity android:name="cc.bodyplus.health.mvp.view.login.RegisterGenderActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"/>
+        <activity android:name="cc.bodyplus.health.widget.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"/>
+        <activity android:name="cc.bodyplus.health.mvp.view.equipment.EquipmentBondActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"/>
+        <activity android:name="cc.bodyplus.health.ble.ota.NotificationActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"/>
+        <activity android:name="cc.bodyplus.health.mvp.view.monitor.activity.EcgListActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"/>
+        <activity android:name="cc.bodyplus.health.mvp.view.monitor.activity.EcgListActivity2"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"/>
+        <activity android:name="cc.bodyplus.health.mvp.view.monitor.activity.MonitorEcgActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"/>
+        <activity android:name="cc.bodyplus.health.mvp.view.monitor.activity.MonitorEcgTagActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"/>
+        <activity android:name="cc.bodyplus.health.mvp.view.monitor.activity.EcgViewReportActivity"
+            android:screenOrientation="landscape"
+             />
+        <!--android:theme="@android:style/Theme.NoTitleBar.Fullscreen"-->
+        <activity android:name="cc.bodyplus.health.mvp.view.monitor.activity.EcgSharePngActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"/>
+        <service
+            android:name="cc.bodyplus.health.ble.manager.BleService"
+            android:exported="true" />
+        <service
+            android:name="cc.bodyplus.health.ble.ota.OTAService"
+            android:enabled="true" />
+
+        <provider
+            android:name="cc.bodyplus.health.utils.db.HistoryContentProvider"
+            android:authorities="cc.bodyplus.health.provider"
+            android:exported="true" />
+    </application>
+
+</manifest>

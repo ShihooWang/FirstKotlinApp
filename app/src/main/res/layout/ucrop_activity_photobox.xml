@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/title_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/txt_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text="@string/cancel"
+            android:textColor="@color/color_text_3"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/image_cut_title"
+            android:textColor="@color/color_text_3"
+            android:textSize="17sp" />
+
+
+        <TextView
+            android:id="@+id/txt_complete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:text="@string/confirm"
+            android:textColor="@color/color_text_3"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+
+    <cc.bodyplus.health.widget.ucrop.view.UCropView
+        android:id="@+id/ucrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/wrapper_controls"
+        android:layout_below="@+id/title_view"
+        android:background="@color/blank" />
+
+    <FrameLayout
+        android:id="@+id/wrapper_controls"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_above="@+id/wrapper_states">
+
+        <include
+            android:id="@+id/layout_aspect_ratio"
+            layout="@layout/ucrop_layout_aspect_ratio" />
+
+        <include
+            android:id="@+id/layout_rotate_wheel"
+            layout="@layout/ucrop_layout_rotate_wheel" />
+
+        <include
+            android:id="@+id/layout_scale_wheel"
+            layout="@layout/ucrop_layout_scale_wheel" />
+
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_above="@+id/wrapper_states"
+        android:background="@drawable/ucrop_shadow_upside" />
+
+    <LinearLayout
+        android:id="@+id/wrapper_states"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_alignParentBottom="true"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/state_scale"
+            style="@style/ucrop_WrapperIconState">
+
+            <ImageView
+                style="@style/ucrop_ImageViewWidgetIcon"
+                android:src="@drawable/ucrop_ic_selector_scale" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/state_rotate"
+            style="@style/ucrop_WrapperIconState">
+
+            <ImageView
+                style="@style/ucrop_ImageViewWidgetIcon"
+                android:src="@drawable/ucrop_ic_selector_rotate" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/state_aspect_ratio"
+            style="@style/ucrop_WrapperIconState">
+
+            <ImageView
+                style="@style/ucrop_ImageViewWidgetIcon"
+                android:src="@drawable/ucrop_ic_selector_aspect_ratio" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

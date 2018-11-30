@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/monitor_ic_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/monitor_ic_back"
+            android:padding="16dp"
+            />
+
+        <TextView
+            android:text="监测中"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/text_size_5"
+            android:textColor="@color/color_text_1"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_null"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+    <RelativeLayout
+        android:id="@+id/rl_ecg_view"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="#333e488c"
+        >
+
+        <cc.bodyplus.health.widget.ECGWaveView
+            android:id="@+id/ecg_wave"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:id="@+id/monitor_ecg_heart"
+            android:layout_marginTop="23dp"
+            android:text="当前心率：55"
+            android:textSize="@dimen/text_size_5"
+            android:textColor="@color/color_text_1"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/tv_background"
+            />
+
+    </RelativeLayout>
+
+
+    <cc.bodyplus.health.widget.progress.RoundProgressBar
+        android:layout_marginBottom="20dp"
+        android:id="@+id/roundProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android_custom:bottomTextColor="#000000"
+        android_custom:bottomTextSize="10dp"
+        android_custom:radius="75dp"
+        android_custom:roundColor="#33ebebeb"
+        android_custom:roundProgressOneWidth="6dp"
+        android_custom:roundProgressThreeColor="@color/color_text_5"
+        android_custom:roundProgressThreeWidth="6dp"
+        android_custom:roundWidth="6dp"
+        android_custom:smallRoundOneWidth="6dp"
+        android_custom:smallRoundThreeColor="@color/color_text_5"
+        android_custom:smallRoundTreeStrokeWidth="2dp"
+        android_custom:smallRoundTwoColor="#ffffff"
+        android_custom:smallRoundTwoStrokeWidth="3dp"
+        android_custom:topTextColor="@color/color_text_1"
+        android_custom:topTextSize="@dimen/text_size_8"/>
+
+</LinearLayout>
+

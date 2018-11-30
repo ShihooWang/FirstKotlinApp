@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/transparent"
+        app:popupTheme="@style/toolbarMenuStyle"
+        app:contentInsetStart="0dp"
+        >
+        <ImageView
+            android:id="@+id/title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_img_back"
+            android:layout_centerVertical="true"
+            android:padding="16dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="我的医生"
+            android:textStyle="bold"
+            android:textColor="@color/color_text_3"
+            android:textSize="@dimen/text_size_5"/>
+    </android.support.v7.widget.Toolbar>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/mRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        app:srlAccentColor="@android:color/white"
+        app:srlEnableHeaderTranslationContent="false"
+        app:srlEnableLoadmore="false"
+        app:srlPrimaryColor="@color/colorPrimary">
+
+        <com.scwang.smartrefresh.header.MaterialHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.classic.common.MultipleStatusView
+                android:id="@+id/multipleStatusView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:emptyView="@layout/layout_empty_view"
+                app:errorView="@layout/layout_error_view"
+                app:loadingView="@layout/layout_loading_view"
+                app:noNetworkView="@layout/layout_network_view">
+
+                <ListView
+                    android:id="@+id/listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:horizontalSpacing="1dp"
+                    android:listSelector="@drawable/selector_list_bar"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="1dp"
+                    android:scrollbars="none"
+                    android:dividerHeight="0px"
+                    android:divider="#00000000"
+                    />
+                <LinearLayout
+                    android:id="@+id/view_empty"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="143dp"
+                        android:background="@drawable/ic_empty_data" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:gravity="center"
+                        android:text="暂无记录"
+                        android:textColor="@color/color_text_4"
+                        android:textSize="@dimen/text_size_3" />
+                </LinearLayout>
+
+            </com.classic.common.MultipleStatusView>
+        </FrameLayout>
+
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

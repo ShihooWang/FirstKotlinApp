@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:stl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_text_1"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:padding="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="16dp"
+            android:id="@+id/iv_close"
+            android:src="@drawable/monitor_ic_report_closed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:id="@+id/ecg_tv_pdf"
+            android:drawableLeft="@drawable/monitor_ic_pdf"
+            android:layout_alignParentEnd="true"
+            android:padding="8dp"
+            android:textColor="@color/color_text_3"
+            android:textSize="@dimen/text_size_4"
+            android:text="PDF"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+        <cc.bodyplus.health.widget.ECGWaveViewHorizontal
+            android:id="@+id/ecg_wave"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_marginBottom="26dp"
+            android:layout_marginEnd="29dp"
+            android:layout_marginStart="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_alignParentBottom="true">
+
+            <ImageView
+                android:tag="pause"
+                android:id="@+id/iv_play"
+                android:background="@drawable/iv_ecg_pause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <SeekBar
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:id="@+id/ecg_progress_bar"
+                android:layout_marginStart="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxHeight="8dp"
+                android:minHeight="8dp"
+                android:progressDrawable="@drawable/seekbar_bg"
+                android:thumb="@drawable/progress_thumb"
+            />
+        </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</com.zhy.android.percent.support.PercentLinearLayout>

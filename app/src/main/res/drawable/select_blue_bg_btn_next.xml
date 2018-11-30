@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_checked="true">
+
+        <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="23dp" />
+                    <solid android:color="@color/btn_next_bg_pressed" />
+                </shape>
+            </item>
+
+        </layer-list>
+    </item>
+
+
+    <item android:state_pressed="true">
+
+        <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="23dp" />
+                    <solid android:color="@color/btn_next_bg_pressed" />
+                </shape>
+            </item>
+
+        </layer-list>
+    </item>
+
+    <item android:state_checked="true">
+
+        <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="23dp" />
+                    <solid android:color="@color/btn_next_bg_pressed" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+
+    <item>
+        <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="23dp" />
+                    <solid android:color="@color/btn_next_bg_normal" />
+                </shape>
+            </item>
+
+        </layer-list>
+    </item>
+
+    <item android:state_checked="false">
+
+        <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="23dp" />
+                    <solid android:color="@color/btn_next_bg_normal" />
+                </shape>
+            </item>
+
+        </layer-list>
+    </item>
+
+
+    <item android:state_pressed="false">
+
+        <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="23dp" />
+                    <solid android:color="@color/btn_next_bg_normal" />
+                </shape>
+            </item>
+
+        </layer-list>
+    </item>
+
+    <item android:state_checked="false">
+
+        <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="23dp" />
+                    <solid android:color="@color/btn_next_bg_normal" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/pl_search_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="@drawable/dialog_background"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:id="@+id/iv_flush"
+                android:layout_marginEnd="20dp"
+                android:layout_gravity="end"
+                android:src="@drawable/equipment_research"
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/color_divider"
+                />
+            <ListView
+                android:id="@+id/search_result_list"
+                android:layout_width="match_parent"
+                android:layout_height="242dp"
+                android:divider="@null"
+                android:fadingEdge="none"
+                android:fastScrollEnabled="false"
+                android:scrollbars="none"
+                android:layout_marginBottom="5dp"
+                >
+            </ListView>
+        </LinearLayout>
+    </RelativeLayout>
+
+</merge>
