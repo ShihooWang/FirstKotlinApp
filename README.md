@@ -20,6 +20,7 @@
     可见我的博客：
     https://blog.csdn.net/hello_json/article/details/74931919
     https://blog.csdn.net/hello_json/article/details/74931987
+    https://blog.csdn.net/hello_json/article/details/74935636
     这两篇博客转自我的同事，但是蓝牙相关的内容，却不折不扣的是我的原创，所以我就转过来了，算是我的半个作品。
 
 #### 4.心电图绘制。
